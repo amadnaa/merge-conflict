@@ -1,0 +1,3 @@
+Tudeng nr 1 loob faili conflict.txt ning kirjutab sinna sisusse paar rida teksti omal valikul. 
+Avage oma projekt Visual Studio Code’is: File -> Open Folder -> (vali oma projekt).
+Looge sinna projekti uus fail nimega conflict.txt.
