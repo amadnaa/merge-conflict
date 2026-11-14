@@ -1,0 +1,1 @@
+Selliste konfliktide vältimiseks tasub alati enne failide muutma hakkamist teha git pull, teha väikeseid ja sagedasi committe ja tihti mergida. Lisaks saab kokku leppida, kes millist osa failist muudab.
