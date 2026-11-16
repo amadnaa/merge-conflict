@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Oswald", Arial, sans-serif;
+    background:
+        linear-gradient(rgba(242, 236, 229, 0.8), rgba(242, 236, 229, 0.8)),
+        url('https://www.gioia.com.au/cdn/shop/products/Traditional-Beige-Pattern-Framed-Canvas-Print-Poster-Gioia-Wall-Art-2.jpg?v=1731375106&width=2048') center/cover no-repeat fixed;
+    color: #2d221d;
+    line-height: 1.4;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.leht {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 26px 40px;
+}
+
+.pais {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    margin: 0;
+    font-size: clamp(3.2rem, 5vw, 5.5rem);
+    line-height: 0.9;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-family: "Dancing Script", cursive;
+    color: #3b2d26;
+}
+
+.menuu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+    margin-top: 12px;
+}
+
+.nupp {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    color: #3b2d26;
+    font-family: "Roboto Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.sotsiaal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ikoon {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #c7a98d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    color: #3b2d26;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.ikoon.aktiivne {
+    opacity: 1;
+}
+
+.sisu {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.galerii {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.galerii img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border: 1px solid #d8c4ae;
+    background: #eee;
+}
+
+.info {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.kaart {
+    height: 260px;
+    border: 1px solid #d8c4ae;
+    overflow: hidden;
+    background: #e9ebee;
+    margin-bottom: 14px;
+}
+
+.kaart iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.aadress,
+.ajad {
+    text-align: center;
+    margin: 16px 0 0;
+}
+
+.aadress {
+    margin: 0;
+    font-size: clamp(1.4rem, 2vw, 2.3rem);
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}
+
+.ajad {
+    margin: 10px 0 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    font-family: "Roboto Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.hinnakiri-page {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hinnakiri-page h2 {
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 600;
+    color: #3b2d26;
+}
+
+@media (max-width: 760px) {
+    .pais {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sisu {
+        grid-template-columns: 1fr;
+    }
+
+    .galerii {
+        grid-template-columns: 1fr;
+    }
+}
